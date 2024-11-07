@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css"> 
+    <title> Brewing Equipment</title>
+    <script src="search1.js"> </script>
+</head>
+<body>
+     <!--navagation bar -->
+     <header>
+        <div class="logo">Boutique Coffee Shop</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="selection.html" title="Coffee Selection">Coffee Selection</a></li>
+                <li><a href="brewing.html" title="Brewing Equipment">Brewing Equipment</a></li>
+                <li><a href="event.html" title="Events and Workshop">Events and Workshop</a></li>
+                <li><a href="cart.html" title="Shopping Cart">Shopping Cart</a></li>
+                <li><a href="special.html" title="Special Offers">Special Offers</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <label class="search-bar" for="search-item" title="Search"> Search
+                
+                <input type="search" id="search-item"  onkeyup="search()">
+                
+             </label>
+            </div>
+
+    
+        
+    </header>
+    
+
+<section class="brewing-equipment-page">
+
+    <h3 class="brewing-equipment-title"> Brewing Equipment</h3>
+
+    <section class="featured-products">
+    
+    <div class="sel-product" title="Moka Pot">
+        <img src="image/moka-pot.png" alt="moka pot" class="brewing-item">
+        <h3>Moka Pot</h3>
+        <p>$25.50</p>
+        <a href="detail2.html" class="btn" title="More Details">More Details</a>
+        <a href="cart.html" class="btn" title="Add to Cart">Add to Cart</a>
+    </div>
+
+    <div class="sel-product" title="Pour Over Dripper">
+        <img src="image/Pour-Over-dripper.webp" alt="pour over dripper" class="brewing-item" >
+        <h3>Pour Over Dripper</h3>
+        <p>$16.00</p>
+        <a href="#" class="btn" title="More Details">More Details</a>
+        <a href="cart.html" class="btn" title="Add to Cart">Add to Cart</a>
+    </div>
+
+    <div class="sel-product" title="Espresso Machine">
+        <img src="image/espresso-machine.jpg" alt="espresso machine" class="brewing-item">
+        <h3>Espresso Machine</h3>
+        <p>$60.00</p>
+        <a href="#" class="btn" title="More Details">More Details</a>
+        <a href="cart.html" class="btn" title="Add to Cart">Add to Cart</a>
+    </div>
+
+    
+
+    <div class="sel-product" title="Fresh Press">
+        <img src="image/french-press.webp" alt="fresh press" class="brewing-item">
+        <h3>Fresh Press</h3>
+        <p>$20.12</p>
+        <a href="#" class="btn" title="More Details">More Details</a>
+        <a href="cart.html" class="btn" title="Add to Cart">Add to Cart</a>
+    </div>
+
+    <div class="sel-product" title="Chemex Coffeemaker">
+        <img src="image/chemex-coffeemaker.jpg" alt="chemex-coffeemaker" class="brewing-item">
+        <h3> Chemex Coffeemaker</h3>
+        <p>$49.99</p>
+        <a href="#" class="btn" title="More Details">More Details</a>
+        <a href="cart.html" class="btn" title="Add to Cart">Add to Cart</a>
+    </div>
+
+    <div class="sel-product" title="V 60 Glass Server">
+        <img src="image/v-60-glass-server.jpg" alt="v 60 glass server" class="brewing-item">
+        <h3>V 60 Glass Server</h3>
+        <p>$30</p>
+        <a href="#" class="btn" title="More Details">More Details</a>
+        <a href="cart.html" class="btn" title="Add to Cart">Add to Cart</a>
+    </div>
+
+    <div class="sel-product" title="Espresso Coffee Powder">
+        <img src="image/espresso-coffee-powder.jpg" alt="Espresso Coffee Powder" class="brewing-item">
+        <h3>Espress Coffee Powder</h3>
+        <p>$20</p>
+        <a href="detail3.html" class="btn" title="More Details">More Details</a>
+        <a href="cart.html" class="btn" title="Add to Cart">Add to Cart</a>
+    </div>
+
+    <div class="sel-product" title="Coffee Powder">
+        <img src="image/coffee-powder.jpg" alt="Coffee Powder" class="brewing-item">
+        <h3>Coffee Powder</h3>
+        <p>$15</p>
+        <a href="#" class="btn" title="More Details">More Details</a>
+        <a href="cart.html" class="btn" title="Add to Cart" >Add Cart</a>
+    </div>
+  </section>
+
+</section>
+
+
+<script>
+     // Coffee Maker Add to Cart button functionality
+     document.getElementById('addToCartCoffeeMaker').addEventListener('click', function() {
+        window.location.href = 'cart.html'; // Replace 'cart.html' with the URL you want to redirect to
+    });
+
+    // Premium Coffee Beans Add to Cart button functionality
+    document.getElementById('addToCartCoffeeBeans').addEventListener('click', function() {
+        window.location.href = 'cart.html'; // Redirect to another page or the same one
+    });
+
+    // Coffee Brewing Kit Add to Cart button functionality
+    document.getElementById('addToCartBrewingKit').addEventListener('click', function() {
+        window.location.href = 'cart.html'; // Redirect to the correct page
+    });
+    </script>
+    
+    
+    <footer class="footer">
+        <h3 class="footer-title">Bean Boutique Coffee Shop</h3>
+        <p class="footer-description">Bean Boutique Coffee Shop is a leading provider of premium coffee and brewing equipment. We are committed to delivering the finest quality products and ensuring customer satisfaction with every cup.</p>
+        
+       
+        <div class="footer-sections">
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 23 street, Yangon, Myanmar</p>
+                <p><i class="fas fa-phone"></i> +959 956 450 061</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:beanboutique2003@gmail.com">beanboutique2003@gmail.com</a></p>
+            </div>
+            
+            <div class="footer-link">
+                <ul>
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="selection.html" title="Coffee Selection">Coffee Selection</a></li>
+                    <li><a href="brewing.html" title="Brewing Equipment">Brewing Equipment</a></li>
+                    <li><a href="event.html" title="Events and Workshop">Events and Workshop</a></li>
+                    <li><a href="cart.html" title="Shopping Cart">Shopping Cart</a></li>
+                    <li><a href="special.html" title="special Offers">Special Offers</a></li>
+                </ul>
+           
+            </div>
+    
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    <hr>
+    <div class="footer-bottom">
+        <p>© 2024 Bean Boutique Coffee Shop. All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+</footer>  
+</body>
+</html>
