@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="dealpop.js"> </script>
+</head>
+<body>
+<section class="main">
+ 
+<!--dealpopup-->
+<section>
+    <div id="dealPopup" class="deal-popup">
+        <div class="deal-popup-content">
+            <span class="deal-close-btn" onclick="closeDeal()">&times;</span>
+            <h2>Special Offer Just for You!</h2>
+            <p>Enjoy Buy One Get One Free on your first order and subscription!</p> <br>
+            <a class="deal-btn order-btn" onclick="startOrder()">Order Now</a>
+            <a class="deal-btn subscribe-btn" onclick="startSubscribe()">Subscribe</a>
+        </div>
+    </div>
+</section>
+
+
+    <!--navagation bar -->
+    <header>
+        <div class="logo">Boutique Coffee Shop</div>
+
+        <nav>
+            <ul>
+                
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="selection.html" title="Coffee Selection">Coffee Selection</a></li>
+                <li><a href="brewing.html" title="Brewing Equipment">Brewing Equipment</a></li>
+                <li><a href="event.html" title="Events and Workshop">Events and Workshop</a></li>
+                <li><a href="cart.html" title="Shopping Cart">Shopping Cart</a></li>
+                <li><a href="special.html" title="special Offers">Special Offers</a></li>
+            </ul>
+        </nav>
+    <div>
+        <label class="search-bar" for="search-item" title="search"> Search
+            
+            <input type="search" id="search-item"  >
+            
+         </label>
+        </div>
+        
+    </header>
+
+    <div class="welcome-section">
+     <div class="welcome-section-container">
+        <div class="slideshow-container">
+            <div class="mySlides fade" title="bean boutique coffee shop">
+                <img src="image/shop-simle.jpeg" alt="Bean Boutique Coffee Shop" class="shop-image">
+            </div>
+            <div class="mySlides fade" title="coffee beans">
+                <img src="image/coffee-bean.jpg" alt="Coffee Beans" class="shop-image">
+            </div>
+            <div class="mySlides fade" title="coffee brewing">
+                <img src="image/coffee-brewing.jpg" alt="Coffee Brewing" class="shop-image">
+            </div>
+        </div>
+        <div class="shop-story">
+             <h2> Our story</h2>
+             <p>Founded in 2003, our coffee shop offers a serene, natural setting designed to inspire creativity for students, employees, and business owners. With scenic views, peaceful corners, and endless possibilities, we’ve earned glowing feedback from customers who love the perfect blend of work and relaxation.</p>
+             <a  href="signup.html" title="Create Account" class="btn"> Create Account </a>
+        </div>
+    </div>
+        
+    </div>
+    
+<!-- Main Banner -->
+<section class="main-banner">
+    <div class="banner-content">
+        <h2 class="text-color">Welcome to Boutique Coffee Shop</h2>
+        <p class="text-color">"Experience quality coffee, inspiring spaces, and a relaxing atmosphere today!"</p>
+        <a href="#" class="shop-now">Shop Now</a>
+    </div>
+</section>
+
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+
+    <div class="sel-product" title="cappuccino">
+        <img src="image/cappuccino-image.jpg" alt="cappuccino" class="coffee-image">
+        <h3>Cappuccino</h3>
+        <a href="detail1.html" class="btn" title="More Detail">More Details</a>
+    </div>
+
+    <div class="sel-product" title="Moka Pot">
+        <img src="image/moka-pot.png" alt="coffee machine" class="coffee-image">
+        <h3>Moka Pot</h3>
+        <a href="detail3.html" class="btn" title="More Detail">More Details</a>
+    </div>
+
+    <div class="sel-product" title=" espresso coffee powder">
+        <img src="image/espresso-coffee-powder.jpg" alt="coffee powder" class="coffee-image">
+        <h3>Espresso Coffee Powder</h3>
+        <a href="detail3.html" class="btn" title="More Detail">More Details</a>
+    </div>
+  </section>
+
+
+<!-- Upcoming Events -->
+    <section class="upcoming-events">
+        <h2>Upcoming Coffee Events</h2>
+        <div class="events-grid">
+            <div class="event" title="coffee event">
+                <img src="image/coffeee-event.webp" alt="Coffee Event" class="event-image">
+                <h3>Event and Workshop</h3>
+                <p>Date: December 30</p>
+                <a href="event.html" class="btn" title="Register Now" >Register Now</a>
+            </div>
+            <div class="event" title="promotion">
+                <img src="image/promotio.jpg" alt="promotion" class="event-image">
+                <h3>Special Offers</h3>
+                <p>Date: September 30</p>
+                <a href="special.html" class="btn" title="Register Now">Subcribe Now</a>
+            </div>
+            </div>
+
+
+</section>
+
+
+
+<div class="map-section">
+    <div class="map-header">Coffee Shop Location in Yangon</div>
+    <div class="map-container">
+        <!-- Embed Google Map with Yangon as location -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.514924505827!2d96.14749237498491!3d16.840929421963664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ecf6c5e2b6d7%3A0xb87b129f4b1d62a6!2sYangon%2C%20Myanmar%20(Burma)!5e0!3m2!1sen!2sus!4v1637587989876!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy"></iframe>
+    </div>
+</div>
+<!-- footer -->
+
+<footer class="footer">
+    <h3 class="footer-title">Bean Boutique Coffee Shop</h3>
+    <p class="footer-description">Bean Boutique Coffee Shop is a leading provider of premium coffee and brewing equipment. We are committed to delivering the finest quality products and ensuring customer satisfaction with every cup.</p>
+    
+   
+    <div class="footer-sections">
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-map-marker-alt"></i> 23 street, Yangon, Myanmar</p>
+            <p><i class="fas fa-phone"></i> +959 956 450 061</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:beanboutique2003@gmail.com">beanboutique2003@gmail.com</a></p>
+        </div>
+        
+        <div class="footer-link">
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="selection.html" title="Coffee Selection">Coffee Selection</a></li>
+                <li><a href="brewing.html" title="Brewing Equipment">Brewing Equipment</a></li>
+                <li><a href="event.html" title="Events and Workshop">Events and Workshop</a></li>
+                <li><a href="cart.html" title="Shopping Cart">Shopping Cart</a></li>
+                <li><a href="special.html" title="special Offers">Special Offers</a></li>
+            </ul>
+       
+        </div>
+
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <a href="" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+<hr>
+<div class="footer-bottom">
+    <p>© 2024 Bean Boutique Coffee Shop. All Rights Reserved. <a href="">Privacy Policy</a> | <a href="">Terms of Service</a></p>
+</div>
+</footer>
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+let i;
+let slides = document.getElementsByClassName("mySlides fade");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+slides[slideIndex-1].style.display = "block";  
+setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>  
+</section>
+</body>
+</html>
+
 
